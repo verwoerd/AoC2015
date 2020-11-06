@@ -6,7 +6,7 @@ import java.io.BufferedReader
  */
 object Resource
 
-inline fun withResourceFile(problem: (BufferedReader) -> String) {
+inline fun withResourceFile(problem: (BufferedReader) -> Any) {
   val startTime = System.currentTimeMillis()
   try {
     val result = Resource::class.java.getResourceAsStream("input").bufferedReader().run(problem)
