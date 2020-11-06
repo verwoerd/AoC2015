@@ -8,5 +8,9 @@ import java.io.BufferedReader
  * @since 06-11-20
  */
 fun part1(input: BufferedReader): String {
-  return "Hello World"
+  return input.readLine().map { when(it) {
+    '(' -> 1
+    ')' -> -1
+    else -> error("invalid input $it")
+  } }.sum().toString()
 }
