@@ -1,8 +1,6 @@
-package part1
+package day.part1
 
 import ExampleTest
-import io.kotest.core.spec.style.FreeSpec
-import io.kotest.matchers.shouldBe
 
 /**
  * @author verwoerd

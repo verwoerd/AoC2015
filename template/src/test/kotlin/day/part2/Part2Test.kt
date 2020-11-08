@@ -1,4 +1,4 @@
-package part2
+package day.part2
 
 import ExampleTest
 

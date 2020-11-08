@@ -1,6 +1,5 @@
-package part2
+package day.part2
 
-import withResourceFile
 import java.io.BufferedReader
 
 /**

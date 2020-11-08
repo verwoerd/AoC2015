@@ -1,5 +1,5 @@
-import part1.part1
-import part2.part2
+import day.part1.part1
+import day.part2.part2
 
 /**
  * @author verwoerd
