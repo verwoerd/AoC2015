@@ -8,7 +8,7 @@ fun <T> combinations(n: Int, list: Collection<T>): List<List<T>> =
     combinations(n-1, sublist.drop(1)).map { (it + sublist.first()) }
   }
 
-private fun <T> Collection<T>.flatMapTails(f: (Collection<T>) -> (List<List<T>>)): List<List<T>> =
+fun <T> Collection<T>.flatMapTails(f: (Collection<T>) -> (List<List<T>>)): List<List<T>> =
   if (isEmpty()) emptyList()
   else f(this) + this.drop(1).flatMapTails(f)
 
